@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cf063306-a7d7-4ab8-9fe6-9a428dc420d6" name="Changes" comment="first prototype - incomplete">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/server/MainHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/server/MarkdownServerProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/server/UploadHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/test.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/test2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownFileReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/server/MainHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/server/MarkdownServerProcess.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/server/UploadHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/test.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/test2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/src/api/data_provider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/src/components/MdCode.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/src/components/MdHeading1.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/src/components/MdHeading2.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/src/components/MdText.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/src/components/topNavigationBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/src/views/MdDisplay.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/ui.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/vue.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Yunho0320&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Yunho0320/markdown_parser.git&quot;,
+    &quot;accountId&quot;: &quot;432bb0cd-a2f6-4cd9-a9e1-e7d7aa191f70&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2zqFlOu8EnWsg4Jue1BrsglP9EE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Application.MarkdownParserProcess.executor": "Run",
+    "Application.MarkdownServerProcess.executor": "Run",
+    "JavaScript Debug.Debug Application.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Dev/Workspace/personal_projects/markdown_parser/ui/src/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "C:/Users/yunho/AppData/Roaming/JetBrains/IntelliJIdea2025.1/node/versions/20.15.0/node",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.serve.executor": "Run",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.1.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\Workspace\personal_projects\markdown_parser\ui\src\components" />
+      <recent name="C:\Dev\Workspace\personal_projects\markdown_parser\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\Workspace\personal_projects\markdown_parser\ui\src\views" />
+      <recent name="C:\Dev\Workspace\personal_projects\markdown_parser\ui\src\router" />
+      <recent name="C:\Dev\Workspace\personal_projects\markdown_parser\" />
+      <recent name="C:\Dev\Workspace\personal_projects\markdown_parser" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="MarkdownServerProcess" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="markdown.server.MarkdownServerProcess" />
+      <module name="server" />
+      <option name="VM_PARAMETERS" value="-Dmarkdown.folder=C:\Dev\Workspace\personal_projects\markdown_parser\server\src\main\resources -Dresource.dir=C:\Dev\Workspace\personal_projects\markdown_parser\ui\dist" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="markdown.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ui/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ui/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.MarkdownServerProcess" />
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.serve" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf063306-a7d7-4ab8-9fe6-9a428dc420d6" name="Changes" comment="" />
+      <created>1752450846326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752450846326</updated>
+      <workItem from="1752450847403" duration="27521000" />
+      <workItem from="1752954303799" duration="31772000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first prototype - incomplete" />
+    <option name="LAST_COMMIT_MESSAGE" value="first prototype - incomplete" />
+  </component>
+</project>
