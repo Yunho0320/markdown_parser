@@ -14,7 +14,7 @@ public class MarkdownServerProcess {
 
         // Handler for serving static files (Vue build output)
         ResourceHandler staticHandler = new ResourceHandler();
-        staticHandler.setResourceBase(resourceDir); // adjust this path as needed
+        staticHandler.setResourceBase(resourceDir);
         staticHandler.setDirectoriesListed(false);
         staticHandler.setWelcomeFiles(new String[]{resourceDir + "/index.html"});
 

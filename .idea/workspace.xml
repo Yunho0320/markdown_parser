@@ -5,58 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf063306-a7d7-4ab8-9fe6-9a428dc420d6" name="Changes" comment="first prototype - incomplete">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownFileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/server/MainHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/server/MarkdownServerProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/markdown/server/UploadHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/test.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/test2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownFileReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/server/MainHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/server/MarkdownServerProcess.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/classes/markdown/server/UploadHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/classes/test.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/classes/test2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/api/data_provider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/components/MdCode.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/components/MdHeading1.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/components/MdHeading2.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/components/MdText.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/components/topNavigationBar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/views/MdDisplay.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/ui.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownType.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/markdown/parser/MarkdownType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/markdown/server/MarkdownServerProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/markdown/server/MarkdownServerProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/test.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownType.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/markdown/parser/MarkdownType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/test.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/MdCode.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/CodeJava.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/MdHeading1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Heading1.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/MdHeading2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Heading2.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/MdText.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Text.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/views/MdDisplay.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/views/MdDisplay.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ui" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -108,7 +71,7 @@
     "JavaScript Debug.Debug Application.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Dev/Workspace/personal_projects/markdown_parser/ui/src/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -143,7 +106,7 @@
       <recent name="C:\Dev\Workspace\personal_projects\markdown_parser" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.serve">
+  <component name="RunManager" selected="Application.MarkdownServerProcess">
     <configuration name="MarkdownServerProcess" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="markdown.server.MarkdownServerProcess" />
       <module name="server" />
@@ -206,8 +169,17 @@
       <option name="presentableId" value="Default" />
       <updated>1752450846326</updated>
       <workItem from="1752450847403" duration="27521000" />
-      <workItem from="1752954303799" duration="31772000" />
+      <workItem from="1752954303799" duration="49120000" />
     </task>
+    <task id="LOCAL-00001" summary="first prototype - incomplete">
+      <option name="closed" value="true" />
+      <created>1753048229220</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753048229220</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

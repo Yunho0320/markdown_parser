@@ -1,9 +1,15 @@
 package markdown.parser;
 
 public enum MarkdownType {
-    Heading1,
-    Heading2,
-    Heading3,
-    Text,
-    Code
+    HEADING1,
+    HEADING2,
+    HEADING3,
+    TEXT,
+    CODE_JAVA,
+    CODE_MERMAID,
+    CODE_JAVASCRIPT,
+    CODE_HTML,
+    CODE_CSS,
+    CODE_YAML,
+    CODE_JSON
 }

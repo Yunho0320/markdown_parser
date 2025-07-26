@@ -1,8 +1,5 @@
 package markdown.parser;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -38,20 +35,44 @@ public class MarkdownParser {
         if (insideCodeBlock) {
             handleCodeLine(line);
         } else if (isCodeBlockStart(line)) {
-            startCodeBlock();
+            startCodeBlock(line);
         } else {
             handleRegularLine(line);
         }
     }
 
     private boolean isCodeBlockStart(String line) {
-        return line.startsWith("```java");
+        return line.startsWith("```");
     }
 
-    private void startCodeBlock() {
+    private void startCodeBlock(String line) {
         insideCodeBlock = true;
         currentCodeBlock = new MarkdownModel();
-        currentCodeBlock.setType(MarkdownType.Code);
+        String languageType = line.trim().toLowerCase().substring(3);
+        switch(languageType) {
+            case "java":
+                currentCodeBlock.setType(MarkdownType.CODE_JAVA);
+                break;
+            case "mermaid":
+                currentCodeBlock.setType(MarkdownType.CODE_MERMAID);
+                break;
+            case "javascript":
+                currentCodeBlock.setType(MarkdownType.CODE_JAVASCRIPT);
+                break;
+            case "html":
+                currentCodeBlock.setType(MarkdownType.CODE_HTML);
+                break;
+            case "css":
+                currentCodeBlock.setType(MarkdownType.CODE_CSS);
+                break;
+            case "yaml":
+                currentCodeBlock.setType(MarkdownType.CODE_YAML);
+                break;
+            case "json":
+                currentCodeBlock.setType(MarkdownType.CODE_JSON);
+                break;
+            default:
+        }
     }
 
     private void handleCodeLine(String line) {
@@ -82,16 +103,16 @@ public class MarkdownParser {
         MarkdownType type;
         switch (level) {
             case 1:
-                type = MarkdownType.Heading1;
+                type = MarkdownType.HEADING1;
                 break;
             case 2:
-                type = MarkdownType.Heading2;
+                type = MarkdownType.HEADING2;
                 break;
             case 3:
-                type = MarkdownType.Heading3;
+                type = MarkdownType.HEADING3;
                 break;
             default:
-                type = MarkdownType.Text;
+                type = MarkdownType.TEXT;
                 break;
         }
 
@@ -104,7 +125,7 @@ public class MarkdownParser {
 
     private MarkdownModel parseText(String line) {
         MarkdownModel model = new MarkdownModel();
-        model.setType(MarkdownType.Text);
+        model.setType(MarkdownType.TEXT);
         model.setContent(Collections.singletonList(line));
         return model;
     }
