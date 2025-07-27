@@ -5,20 +5,31 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class MarkdownParser {
 
     private boolean insideCodeBlock = false;
+    private boolean insideTableBlock = false;
     private MarkdownModel currentCodeBlock;
+    private MarkdownModel currentTableBlock;
     private List<MarkdownModel> markdownModels;
 
     public List<MarkdownModel> parse(Path path) {
-        markdownModels = new ArrayList<>();
+        markdownModels = new LinkedList<>();
         List<String> lines = readLines(path);
         for (String line : lines) {
             if (line.isEmpty()) continue;
             parseLine(line);
+        }
+        if (insideCodeBlock && currentCodeBlock != null) {
+            markdownModels.add(currentCodeBlock);
+            insideCodeBlock = false;
+        }
+        if (insideTableBlock && currentTableBlock != null) {
+            markdownModels.add(currentTableBlock);
+            insideTableBlock = false;
         }
         return markdownModels;
     }
@@ -34,15 +45,22 @@ public class MarkdownParser {
     private void parseLine(String line) {
         if (insideCodeBlock) {
             handleCodeLine(line);
+        }else if (insideTableBlock) {
+            handleTableLine(line);
+        }  else if (isTableLine(line)) {
+            startTableBlock(line);
         } else if (isCodeBlockStart(line)) {
             startCodeBlock(line);
         } else {
-            handleRegularLine(line);
+            handleNonCodeLines(line);
         }
     }
 
     private boolean isCodeBlockStart(String line) {
         return line.startsWith("```");
+    }
+    private boolean isTableLine(String line) {
+        return line.startsWith("|");
     }
 
     private void startCodeBlock(String line) {
@@ -50,17 +68,14 @@ public class MarkdownParser {
         currentCodeBlock = new MarkdownModel();
         String languageType = line.trim().toLowerCase().substring(3);
         switch(languageType) {
-            case "java":
-                currentCodeBlock.setType(MarkdownType.CODE_JAVA);
-                break;
             case "mermaid":
                 currentCodeBlock.setType(MarkdownType.CODE_MERMAID);
                 break;
-            case "javascript":
-                currentCodeBlock.setType(MarkdownType.CODE_JAVASCRIPT);
+            case "js":
+                currentCodeBlock.setType(MarkdownType.CODE_JS);
                 break;
-            case "html":
-                currentCodeBlock.setType(MarkdownType.CODE_HTML);
+            case "xml":
+                currentCodeBlock.setType(MarkdownType.CODE_XML);
                 break;
             case "css":
                 currentCodeBlock.setType(MarkdownType.CODE_CSS);
@@ -72,6 +87,8 @@ public class MarkdownParser {
                 currentCodeBlock.setType(MarkdownType.CODE_JSON);
                 break;
             default:
+                currentCodeBlock.setType(MarkdownType.CODE_JAVA);
+                break;
         }
     }
 
@@ -84,12 +101,35 @@ public class MarkdownParser {
         }
     }
 
-    private void handleRegularLine(String line) {
-        MarkdownModel model;
-        if (line.startsWith("#")) {
-            model = parseHeading(line);
+    private void startTableBlock(String line) {
+        insideTableBlock = true;
+        currentTableBlock = new MarkdownModel();
+        currentTableBlock.setType(MarkdownType.TABLE);
+        currentTableBlock.getContent().add(line);
+    }
+
+    private void handleTableLine(String line) {
+        if (!line.startsWith("|")) {
+            insideTableBlock = false;
+            markdownModels.add(currentTableBlock);
+            parseLine(line);  // This is key - if it's not in the table, we should parse the line as usual
         } else {
-            model = parseText(line);
+            currentTableBlock.getContent().add(line);
+        }
+    }
+
+    private void handleNonCodeLines(String line) {
+        MarkdownModel model;
+        String firstCharacter = line.substring(0, 1);
+        switch(firstCharacter) {
+            case "#":
+                model = parseHeading(line);
+                break;
+            case "-":
+                model = parseNonCode(line, MarkdownType.LIST);
+                break;
+            default:
+                model = parseNonCode(line, MarkdownType.TEXT);
         }
         markdownModels.add(model);
     }
@@ -123,9 +163,9 @@ public class MarkdownParser {
         return model;
     }
 
-    private MarkdownModel parseText(String line) {
+    private MarkdownModel parseNonCode(String line, MarkdownType type) {
         MarkdownModel model = new MarkdownModel();
-        model.setType(MarkdownType.TEXT);
+        model.setType(type);
         model.setContent(Collections.singletonList(line));
         return model;
     }
